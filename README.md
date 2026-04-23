@@ -63,7 +63,6 @@ irm app.sophi.app -useb | iex
 ### 🗑️ App & Bloatware Management
 - [Sycnex/Windows10Debloater](https://github.com/Sycnex/Windows10Debloater) – Classic interactive debloater (legacy)
 - [Fs00/Win10BloatRemover](https://github.com/Fs00/Win10BloatRemover) – CLI-focused app removal tool
-- [builtbybel/SharpApp](https://github.com/builtbybel/SharpApp) – Clean UI for managing built-in Store apps
 
 ### 🎨 UI & Experience Customization
 - [Open-Shell](https://sourceforge.net/projects/open-shell.mirror/) – Restore classic Start Menu and Explorer
