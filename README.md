@@ -144,26 +144,41 @@ Individual tools retain their original licenses — please review each tool's te
 
 ```
 windows-essential-tools/
-├── README.md                 # You are here
-├── CONTRIBUTING.md          # How to contribute
-├── CODEOWNERS               # Maintainer assignments
+├── README.md                      # Main documentation & tool index
+├── CONTRIBUTING.md                # How to contribute (for community)
+├── MAINTAINERS.md                 # Workflow instructions (for maintainers)
+├── CODEOWNERS                     # Auto-review assignments
+├── LICENSE                        # MIT License
+├── .gitignore                     # Git ignore rules
+├── .lycheeignore                  # Link checker exclusions (bot-blocked domains)
+│
 ├── tools/
-│   ├── active-github.md     # Active open-source repos
-│   ├── active-websites.md   # Official sites & portable tools
-│   ├── archived.md          # Deprecated/historical tools
-│   └── guides-articles.md   # Tutorials & references
+│   ├── active-github.md           # Active open-source repos
+│   ├── active-websites.md         # Official sites & portable tools
+│   ├── archived.md                # Deprecated/historical tools
+│   └── guides-articles.md         # Tutorials & references
+│
 ├── categories/
-│   ├── telemetry-blockers.md
-│   ├── bloatware-removers.md
-│   ├── privacy-tweakers.md
-│   └── ai-feature-removers.md
+│   ├── telemetry-blockers.md      # Tools blocking diagnostic data
+│   ├── bloatware-removers.md      # Tools removing preinstalled apps
+│   ├── privacy-tweakers.md        # Tools hardening privacy settings
+│   └── ai-feature-removers.md     # Tools disabling Copilot/Recall/AI
+│
 ├── scripts/
-│   └── validate-links.ps1   # Local link validation
+│   └── validate-links.ps1         # Local PowerShell link validation
+│
 └── .github/
     ├── ISSUE_TEMPLATE/
-    │   └── tool-request.yml # Contribution form
-    └── workflows/
-        └── link-checker.yml # Automated link validation
+    │   └── tool-request.yml       # Unified form (Add/Update/Remove)
+    │
+    ├── workflows/
+    │   ├── link-checker.yml       # Automated weekly link validation
+    │   ├── manual-add-tool.yml    # Maintainer: Add new tool
+    │   ├── manual-update-tool.yml # Maintainer: Update existing tool
+    │   └── manual-archive-tool.yml# Maintainer: Archive discontinued tool
+    │
+    └── DISCUSSIONS/
+        └── (enabled via GitHub UI) # Community discussions, Q&A, ideas
 ```
 
 ---
