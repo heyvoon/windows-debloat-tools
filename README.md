@@ -1,4 +1,3 @@
-```markdown
 # 🪟 Windows Debloat & Privacy Tools
 
 > A curated collection of tools, scripts, and resources for removing bloatware, disabling telemetry, and enhancing privacy on Windows 10/11.
@@ -33,7 +32,6 @@
 
 ### One-Line Launch Commands
 
-```powershell
 # Chris Titus WinUtil (Recommended for most users)
 irm "https://christitus.com/win" | iex
 
@@ -42,7 +40,6 @@ irm "https://christitus.com/win" | iex
 
 # SophiApp
 irm app.sophi.app -useb | iex
-```
 
 ---
 
@@ -143,4 +140,3 @@ Individual tools retain their original licenses — please review each tool's te
 
 *Last comprehensive review: April 2026*  
 *Community-maintained • Not affiliated with Microsoft*
-```
