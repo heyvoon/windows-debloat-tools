@@ -1,0 +1,27 @@
+# CODEOWNERS
+# GitHub will automatically request reviews from listed users/teams when PRs modify these paths.
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Replace @heyvoon with your actual GitHub handle or @org/team-name
+
+# Root documentation & project config
+README.md           @heyvoon
+CONTRIBUTING.md     @heyvoon
+LICENSE             @heyvoon
+.gitignore          @heyvoon
+CODEOWNERS          @heyvoon
+
+# Tools registry (active, archived, websites, guides)
+tools/              @heyvoon
+
+# Category mappings
+categories/         @heyvoon
+
+# Automation & validation scripts
+scripts/            @heyvoon
+
+# GitHub infrastructure (workflows, issue templates, discussions)
+.github/            @heyvoon
+
+# Fallback: catches any unlisted paths
+*                   @heyvoon
