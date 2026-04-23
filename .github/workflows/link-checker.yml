@@ -1,0 +1,52 @@
+name: 🔗 Automated Link Checker
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Runs every Monday at 06:00 UTC
+  push:
+    branches: [main, master]
+    paths: ['**/*.md']
+  pull_request:
+    branches: [main, master]
+    paths: ['**/*.md']
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🔍 Run lychee link checker
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          args: >-
+            --exclude 'https://github\.com/.*#'
+            --exclude 'https://np\.reddit\.com/.*'
+            --exclude 'https://yewtu\.be/.*'
+            --exclude 'https://www\.privacytools\.io/.*'
+            --exclude-path './.github/**'
+            --timeout 15
+            --retries 2
+            --max-concurrency 8
+            --no-progress
+            --format markdown
+            './**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🐛 Open issue on broken links
+        if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🚨 Broken links detected in markdown files"
+          content-filepath: ./lychee/out.md
+          labels: |
+            🔗 links
+            🐛 bug
+            📖 documentation
