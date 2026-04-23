@@ -76,5 +76,4 @@
 ### ⛔ Archived / Legacy Telemetry Tools
 - [DisableWinTracking](https://github.com/bitlog2/DisableWinTracking) - Breaks Win10 20H2+. Historical.
 - [Destroy-Windows-10-Spying](https://github.com/Wohlstand/Destroy-Windows-10-Spying) - Aggressive, unstable on modern builds.
-- [W10Debotnet 1903](https://fdossena.com/?p=w10debotnet/index_1903.frag) - Tied to obsolete OS version.
 - [Windows10-Privacy (adolfintel)](https://github.com/adolfintel/Windows10-Privacy) - Outdated batch scripts. Superseded.

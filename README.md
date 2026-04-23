@@ -58,7 +58,6 @@ irm app.sophi.app -useb | iex
 - [O&O ShutUp10++](https://www.oo-software.com/en/shutup10) – Free antispy utility with 200+ privacy toggles
 - [W10Privacy](https://www.w10privacy.de/english-home/) – Detailed privacy control panel with toggle explanations
 - [privacy.sexy](https://privacy.sexy/) – Web-based generator for transparent privacy scripts
-- [builtbybel/Debotnet](https://github.com/builtbybel/Debotnet) – Portable privacy tool with safe defaults
 - [WPD](https://wpd.app/) – Modern dashboard for privacy, firewall, and app permissions
 
 ### 🗑️ App & Bloatware Management

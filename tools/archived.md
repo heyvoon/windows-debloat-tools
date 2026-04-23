@@ -22,13 +22,6 @@
 - **Description:** Aggressive registry and service modification script
 - **Notes:** High risk of system instability. Superseded by O&O/W10Privacy.
 
-### [Fdossena's W10Debotnet (1903)](https://fdossena.com/?p=w10debotnet/index_1903.frag)
-- **Type:** `Web/Script`
-- **OS:** `Win10 1903`
-- **Last Verified:** `2026-04-23`
-- **Description:** Early web-based debloat interface
-- **Notes:** Tied to obsolete Windows version. Site offline for years.
-
 ### [Phant0m (hlldz)](https://github.com/hlldz/Phant0m)
 - **Type:** `PowerShell/C#`
 - **OS:** `Windows`

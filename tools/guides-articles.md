@@ -19,12 +19,6 @@
 - **Summary:** Early comparative analysis of antispy utilities
 - **Notes:** Reference only. Methods are outdated.
 
-### [Ghacks: Debotnet 0.5 Update](https://www.ghacks.net/2020/02/01/windows-10-privacy-debotnet-0-5-update-brings-massive-improvements/)
-- **Type:** `Article`
-- **Updated:** `2020`
-- **Summary:** Review of Debotnet's major feature expansion
-- **Notes:** Good historical context for portable tools evolution
-
 ### [Ghacks: SpyDish Major Update Blocker](https://www.ghacks.net/2020/06/29/latest-spydish-can-now-prevent-the-installation-of-major-windows-10-updates/)
 - **Type:** `Article`
 - **Updated:** `2020`
