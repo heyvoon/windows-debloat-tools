@@ -2,7 +2,7 @@ name: 🔗 Automated Link Checker
 
 on:
   schedule:
-    - cron: '0 6 * * 1' # Runs every Monday at 06:00 UTC
+    - cron: '0 6 * * 1'
   push:
     branches: [main, master]
     paths: ['**/*.md']
@@ -31,7 +31,7 @@ jobs:
             --exclude 'https://www\.privacytools\.io/.*'
             --exclude-path './.github/**'
             --timeout 15
-            --retries 2
+            --max-retries 2
             --max-concurrency 8
             --no-progress
             --format markdown
